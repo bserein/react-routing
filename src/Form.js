@@ -24,7 +24,7 @@ function Form() {
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
-        {/* setName is a function that sets the value you put in, onchange means everytime this changes sets the name to the new value you inputed */}
+        {/* onChange is for everytime theres a change it creates an event and the target of that event is the input, which will set the name to whatever value you input */}
         <button type="submit">Submit</button>
         {/* this is like the onclick but for submit */}
       </form>
@@ -35,3 +35,4 @@ function Form() {
 }
 
 export default Form;
+//you can use onBlur for validating emails
